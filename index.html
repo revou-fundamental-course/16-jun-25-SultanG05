@@ -2,24 +2,101 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Matematik - Sultan</title>
-
-    <!-- CSS External -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Matematik - Sultan</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
 </head>
-<!-- HEAD CONTENT -->
-<header></header>
 
+<body>
+  <header>
+    <h1>Welcome to My Katik</h1>
+    <p>
+      Hallo, selamat datang di katik saya :)<br />
+      Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar
+    </p>
 
-<!-- MAIN CONTENT -->
-<main></main>
+    <nav class="a-nav">
+      <a class="a-segitiga" href="#">Segitiga</a>
+      <a class="a-jajargenjang" href="jajar-genjang.html">Jajar Genjang</a>
+    </nav>
+  </header>
 
+  <main>
+    <!-- LUAS SEGITIGA -->
+    <section class="main-section">
+      <header>
+        <h2>Luas Segitiga</h2>
+      </header>
 
-<!-- FOOTER CONTENT -->
-<footer></footer>
+      <div class="formula-img">
+        <img
+          src="https://asset.kompas.com/crops/ZwOr6ZrEtAtid5uZmYhDFijYPa4=/175x161:1573x1094/750x500/data/photo/2022/03/09/62288763c6d64.png"
+          class="img-luas" alt="LUAS SEGITIGA" />
+      </div>
 
+      <div>
+        <p class="keterangan-rumus">Rumus luas segitiga:</p>
+        <p>L = 1/2 × alas × tinggi</p>
+      </div>
 
+      <form onsubmit="return false;">
+        <h3>Hitung Luas Segitiga</h3>
+
+        <label for="alas">Alas:</label>
+        <input type="number" id="alas" placeholder="masukkan alas segitiga" required />
+
+        <label for="tinggi">Tinggi:</label>
+        <input type="number" id="tinggi" placeholder="masukkan tinggi segitiga" required />
+
+        <button type="button" class="button-hitung" id="btn-hitung-luas">Hitung</button>
+        <button type="button" class="button-reset" id="btn-reset-luas">Reset</button>
+
+        <div id="hasil-luas" class="hasil-output"></div>
+      </form>
+    </section>
+
+    <!-- KELILING SEGITIGA -->
+    <section class="main-section">
+      <header>
+        <h2>Keliling Segitiga</h2>
+      </header>
+
+      <div class="formula-img">
+        <img
+          src="https://asset.kompas.com/crops/ZwOr6ZrEtAtid5uZmYhDFijYPa4=/175x161:1573x1094/750x500/data/photo/2022/03/09/62288763c6d64.png"
+          class="img-keliling" alt="KELILING SEGITIGA" />
+      </div>
+
+      <div>
+        <p class="keterangan-rumus">Rumus keliling segitiga:</p>
+        <p>K = S1 + S2 + S3</p>
+      </div>
+
+      <form onsubmit="return false;">
+        <h3>Hitung Keliling Segitiga</h3>
+
+        <label for="sisi-a">Sisi A:</label>
+        <input type="number" id="sisi-a" placeholder="masukkan sisi-a segitiga" required />
+
+        <label for="sisi-b">Sisi B:</label>
+        <input type="number" id="sisi-b" placeholder="masukkan sisi-b segitiga" required />
+
+        <label for="sisi-c">Sisi C:</label>
+        <input type="number" id="sisi-c" placeholder="masukkan sisi-c segitiga" required />
+
+        <button type="button" class="button-hitung" id="btn-hitung-keliling">Hitung</button>
+        <button type="button" class="button-reset" id="btn-reset-keliling">Reset</button>
+
+        <div id="hasil-keliling" class="hasil-output"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sultan. All rights reserved.</p>
+  </footer>
 </body>
+
 </html>

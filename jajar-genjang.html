@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katik - Jajar Genjang</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/jajar-genjang.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to My Katik</h1>
+    <p>
+      Hallo, selamat datang di katik saya :)<br />
+      Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar
+    </p>
+
+    <nav class="a-nav">
+      <a class="a-segitiga" href="index.html">Segitiga</a>
+      <a class="a-jajargenjang" href="#">Jajar Genjang</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- LUAS -->
+    <section class="main-section">
+      <header>
+        <h2>Luas Jajar Genjang</h2>
+      </header>
+
+      <div class="formula-img">
+        <img src="https://imgix2.ruangguru.com/assets/miscellaneous/png_7slcb4_8976.png"
+             class="img-luas" alt="LUAS JAJAR GENJANG">
+      </div>
+
+      <div>
+        <p class="keterangan-rumus">Rumus luas:</p>
+        <p>L = alas × tinggi</p>
+      </div>
+
+      <form onsubmit="return false;">
+        <label for="alas-jg">Alas:</label>
+        <input type="number" id="alas-jg" placeholder="masukkan alas" required />
+
+        <label for="tinggi-jg">Tinggi:</label>
+        <input type="number" id="tinggi-jg" placeholder="masukkan tinggi" required />
+
+        <button type="button" class="button-hitung" id="btn-hitung-luas-jg">Hitung</button>
+        <button type="button" class="button-reset" id="btn-reset-luas-jg">Reset</button>
+
+        <div id="hasil-luas-jg" class="hasil-output"></div>
+      </form>
+    </section>
+
+    <!-- KELILING -->
+    <section class="main-section">
+      <header>
+        <h2>Keliling Jajar Genjang</h2>
+      </header>
+
+      <div class="formula-img">
+        <img src="https://imgix2.ruangguru.com/assets/miscellaneous/png_7slcb4_8976.png"
+             class="img-keliling" alt="KELILING JAJAR GENJANG">
+      </div>
+
+      <div>
+        <p class="keterangan-rumus">Rumus keliling:</p>
+        <p>K = 2 × (alas + sisi miring)</p>
+      </div>
+
+      <form onsubmit="return false;">
+        <label for="alas-kll-jg">Alas:</label>
+        <input type="number" id="alas-kll-jg" placeholder="masukkan alas" required />
+
+        <label for="sisi-miring-jg">Sisi Miring:</label>
+        <input type="number" id="sisi-miring-jg" placeholder="masukkan sisi miring" required />
+
+        <button type="button" class="button-hitung" id="btn-hitung-keliling-jg">Hitung</button>
+        <button type="button" class="button-reset" id="btn-reset-keliling-jg">Reset</button>
+
+        <div id="hasil-keliling-jg" class="hasil-output"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sultan. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
